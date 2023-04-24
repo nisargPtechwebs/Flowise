@@ -9,17 +9,12 @@ const Chatflows = Loadable(lazy(() => import('views/chatflows')))
 
 // marketplaces routing
 const Marketplaces = Loadable(lazy(() => import('views/marketplaces')))
-
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
     path: '/',
     element: <MainLayout />,
     children: [
-        {
-            path: '/',
-            element: <Chatflows />
-        },
         {
             path: '/chatflows',
             element: <Chatflows />

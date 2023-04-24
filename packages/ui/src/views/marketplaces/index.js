@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux'
 
 // material-ui
 import { Grid, Box, Stack } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
 
 // project imports
 import MainCard from 'ui-component/cards/MainCard'
@@ -26,7 +25,7 @@ import { baseURL } from 'store/constant'
 const Marketplace = () => {
     const navigate = useNavigate()
 
-    const theme = useTheme()
+    // const theme = useTheme()
     const customization = useSelector((state) => state.customization)
 
     const [isLoading, setLoading] = useState(true)
@@ -73,7 +72,7 @@ const Marketplace = () => {
     }, [getAllMarketplacesApi.data])
 
     return (
-        <MainCard sx={{ background: customization.isDarkMode ? theme.palette.common.black : '' }}>
+        <MainCard>
             <Stack flexDirection='row'>
                 <h1>Marketplace</h1>
             </Stack>

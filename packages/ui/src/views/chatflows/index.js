@@ -80,7 +80,7 @@ const Chatflows = () => {
     }, [getAllChatflowsApi.data])
 
     return (
-        <MainCard sx={{ background: customization.isDarkMode ? theme.palette.common.black : '' }}>
+        <MainCard>
             <Stack flexDirection='row'>
                 <h1>Chatflows</h1>
                 <Grid sx={{ mb: 1.25 }} container direction='row'>
